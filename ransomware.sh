@@ -70,7 +70,7 @@ main() {
     echo "[*] 如需继续，请输入: yes"
     echo -n "[?] 您的确认: "
 
-    read -r confirmation
+    read -r confirmation < /dev/tty
 
     if [ "$confirmation" != "yes" ]; then
         echo "[-] 确认失败，退出执行"
@@ -80,7 +80,7 @@ main() {
         echo "[*] 如需继续，请继续输入: yes"
     echo -n "[?] 您的确认: "
 
-    read -r confirmation
+    read -r confirmation < /dev/tty
 
     if [ "$confirmation" != "yes" ]; then
         echo "[-] 确认失败，退出执行"
