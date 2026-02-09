@@ -70,22 +70,22 @@ main() {
     echo "[*] 如需继续，请输入: yes"
     echo -n "[?] 您的确认: "
 
-    read -r confirmation < /dev/tty
+    # read -r confirmation < /dev/tty
 
-    if [ "$confirmation" != "yes" ]; then
-        echo "[-] 确认失败，退出执行"
-        exit 1
-    fi
+    # if [ "$confirmation" != "yes" ]; then
+    #     echo "[-] 确认失败，退出执行"
+    #     exit 1
+    # fi
 
-        echo "[*] 如需继续，请继续输入: yes"
-    echo -n "[?] 您的确认: "
+    #     echo "[*] 如需继续，请继续输入: yes"
+    # echo -n "[?] 您的确认: "
 
-    read -r confirmation < /dev/tty
+    # read -r confirmation < /dev/tty
 
-    if [ "$confirmation" != "yes" ]; then
-        echo "[-] 确认失败，退出执行"
-        exit 1
-    fi
+    # if [ "$confirmation" != "yes" ]; then
+    #     echo "[-] 确认失败，退出执行"
+    #     exit 1
+    # fi
 
     echo ""
     echo "[+] 确认成功，开始加密过程..."
